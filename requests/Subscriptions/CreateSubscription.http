@@ -9,7 +9,8 @@ Content-Type: application/json
     "AdminId": "{{adminId}}"
 }
 
-# {
-#     "Id": "{{adminId}}"
-#     "SubscriptionType": "Free", // "Starter", "Pro"
-# }
+####
+@subscriptionId=fc975000-35e3-4121-b0e1-125286513503
+
+GET {{host}}/subscriptions/{{subscriptionId}}
+Content-Type: application/json
