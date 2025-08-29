@@ -1,8 +1,18 @@
-namespace GymManagement.Domain;
+namespace GymManagement.Domain.Subscriptions;
 
 public class Subscription
 {
-    public Guid Id { get; set; }
-    public string SubscriptionType { get; set; } = null!;
+    private readonly Guid _adminId;
+    public Guid Id { get; private set; }
+    public SubscriptionType SubscriptionType { get; private set; } = null!;
 
+    public Subscription(Guid adminId, SubscriptionType subscriptionType, Guid? id = null)
+    {
+        _adminId = adminId;
+        SubscriptionType = subscriptionType;
+        Id = id ?? Guid.NewGuid();
+    }
+
+    // For EF Core
+    private Subscription() { } 
 }

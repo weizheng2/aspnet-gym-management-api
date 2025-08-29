@@ -1,5 +1,5 @@
 using GymManagement.Application;
-using GymManagement.Domain;
+using GymManagement.Domain.Subscriptions;
 using GymManagement.Infrastructure.Common;
 using Microsoft.EntityFrameworkCore;
 

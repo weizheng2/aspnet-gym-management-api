@@ -8,9 +8,3 @@ Content-Type: application/json
     "SubscriptionType": "Free", 
     "AdminId": "{{adminId}}"
 }
-
-####
-@subscriptionId=fc975000-35e3-4121-b0e1-125286513503
-
-GET {{host}}/subscriptions/{{subscriptionId}}
-Content-Type: application/json
